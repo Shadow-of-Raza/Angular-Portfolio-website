@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-website';
+
+  @ViewChild('navToggle') navToggle!: ElementRef<HTMLInputElement>;
+
+  toggleNav() {
+    const navMenu = document.querySelector('.nav-box nav');
+    if (navMenu) {
+      navMenu.classList.toggle('active');
+    }
+  }
+
+  ngAfterViewInit() {
+    this.navToggle.nativeElement.addEventListener('change', () => {
+      this.toggleNav();
+    });
+  }
+  
 }

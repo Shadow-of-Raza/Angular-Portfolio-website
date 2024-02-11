@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+/* 
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+*/
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+html, body {  
+    height: 100%; 
+    cursor: none;
+   
+    /* You can use the user-select property to disable text selection of an element */
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+body { 
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot, .cursor-outline{
+    position: fixed;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}

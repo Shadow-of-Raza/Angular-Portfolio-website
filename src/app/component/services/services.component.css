@@ -1,0 +1,29 @@
+.title{
+    height: 100px;
+    width: 300px;
+    display:  flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.title h1{
+    color: #d6d6d6;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: relative;
+    padding-bottom: 15px;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background: #9b6f09;
+    border-radius: 5px;
+    transform: scaleX(1);
+    left: 0;
+    bottom: 0;
+
+}
