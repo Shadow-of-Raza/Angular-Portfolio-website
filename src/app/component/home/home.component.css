@@ -31,7 +31,7 @@
 }
 
 .box{
-    height: 70vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -206,7 +206,7 @@ button {
 
     .box{
         flex-direction: column-reverse;
-        height: 100%;
+        height: auto;
 
     }
     /* Animated Box Styling */
@@ -291,4 +291,11 @@ button {
         font-size: 10px;
     }
 
+}
+
+/* For Larger Screens */
+@media (min-width: 1440px) and (max-width: 2560px) {
+   .box{
+    height: auto;
+   }
 }

@@ -381,6 +381,7 @@ hr{
 
     .box-1, .box-2 {
         width: 100%;
+        height: auto;
     }
 
     .box-3 {
